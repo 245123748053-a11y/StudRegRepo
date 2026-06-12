@@ -1,0 +1,14 @@
+Create nginx deployment
+kubectl create deployment nginx-deployment --image=nginx
+Verify deployment
+kubectl get deployments
+View pods
+kubectl get pods
+Describe deployment
+kubectl describe deployment nginx-deployment
+Expose deployment as a service
+kubectl expose deployment nginx-deployment --port=80 --type=NodePort
+View services
+kubectl get services
+Delete deployment
+kubectl delete deployment nginx-deployment
