@@ -1,0 +1,20 @@
+Build the Docker image docker build -t myapp.
+4.Run the Docker image.
+docker run myapp
+5. Create a GitHub repository,
+Initialize Git repository.
+pit init
+Add project files
+git add .
+8.Commit the files.
+git commit-m "Initial Commit"
+9. Connect local repository to GitHub.
+git remote add origin
+10.Push the code to GitHub
+git push -u origin main
+11. Login to DockerHub
+docker login
+12.Tag the Docker image.
+docker tag myapp /myapp:latest
+13. Push the Docker image to DockerHub.
+docker push /myapp:latest
